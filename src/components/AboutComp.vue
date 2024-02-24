@@ -37,6 +37,7 @@ section {
   max-width: 1010px;
   margin: auto;
 }
+
 // .ratio {
 //   max-width: 960px;
 //   margin-top: 70px;
