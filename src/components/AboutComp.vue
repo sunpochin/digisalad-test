@@ -37,24 +37,12 @@ section {
   max-width: 1010px;
   margin: auto;
 }
-.ratio {
-  max-width: 960px;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// .container {
-//   max-width: none; /* 移除最大寬度限制 */
-//   width: 100%; /* 使用寬度為100% */
-//   padding-left: 20px; /* 加上左右的內邊距，以保持排版美觀 */
-//   padding-right: 20px;
-// }
-
 // .ratio {
-//   width: 100%; /* 使用寬度為100% */
-//   max-width: none; /* 移除最大寬度限制 */
+//   max-width: 960px;
+//   margin-top: 70px;
+//   margin-bottom: 30px;
+//   margin-left: auto;
+//   margin-right: auto;
 // }
 
 p {
