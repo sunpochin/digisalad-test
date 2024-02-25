@@ -1,7 +1,8 @@
 <template>
   <section>
     <div class="container">
-      <h1>OUT INGRADIENTS</h1>
+      <TitleComp position="center" theme="light" data-aos="fade-up">OUR INGRADIENTS</TitleComp>
+
       <p data-aos="fade-up">
         Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum
         bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.
@@ -39,6 +40,7 @@
 </template>
 
 <script setup>
+import TitleComp from '@/components/TitleComp.vue'
 import ButtonRoundComp from '@/components/ButtonRoundComp.vue'
 
 const getImageUrl = (fileName) => {

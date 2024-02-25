@@ -1,7 +1,8 @@
 <template>
   <section>
     <div class="container">
-      <h1>ABOUT DIGISALAD</h1>
+      <TitleComp position="center" theme="primary" data-aos="fade-up">ABOUT DIGISALAD</TitleComp>
+
       <div class="ratio" data-aos="fade-up" :data-aos-delay="0" data-aos-duration="1000">
         <iframe
           src="https://www.youtube.com/embed/IeIRJ9jZ5Ro?vq=hd1080"
@@ -25,9 +26,13 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import TitleComp from '@/components/TitleComp.vue'
+</script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/mixins/functions';
+
 section {
   padding-top: 125px;
   padding-bottom: 70px;
@@ -37,13 +42,27 @@ section {
   margin: auto;
 }
 
-// .ratio {
-//   max-width: 960px;
-//   margin-top: 70px;
-//   margin-bottom: 30px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.ratio {
+  max-width: 960px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  &::before {
+    @include beforeafter;
+    width: 100%;
+    padding-top: calc(9 / 16) * 100%;
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 p {
   margin-top: 30px;

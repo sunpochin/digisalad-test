@@ -2,7 +2,8 @@
   <section>
     <div class="container-fluid">
       <div class="col-text">
-        AWARDS
+        <TitleComp position="center" theme="primary" data-aos="fade-up">AWARDS</TitleComp>
+
         <p data-aos="fade-up" :data-aos-delay="100" data-aos-duration="15000">
           Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum
           bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.
@@ -44,7 +45,9 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import TitleComp from '@/components/TitleComp.vue'
+</script>
 
 <style lang="scss" scoped>
 @import '@/assets/sass/variables';
