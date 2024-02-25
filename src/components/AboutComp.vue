@@ -3,10 +3,10 @@
     <div class="container">
       <div class="ratio" data-aos="fade-up">
         <iframe
-          src="https://www.youtube.com/embed/IeIRJ9jZ5Ro?vq=hd1080&modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&color=white&controls=0&disablekb=1"
-          title="YouTube video player"
+          src="https://www.youtube.com/embed/IeIRJ9jZ5Ro?vq=hd1080"
+          title="youtube"
           frameborder="0"
-          allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow=""
           allowfullscreen
         ></iframe>
       </div>
@@ -48,9 +48,9 @@ section {
 
 p {
   margin-top: 30px;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
   color: #262626;
-  letter-spacing: 0.0625em;
+  letter-spacing: 1px;
   line-height: 1.75;
   text-align: center;
 }

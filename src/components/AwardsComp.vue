@@ -2,7 +2,6 @@
   <section>
     <div class="container-fluid">
       <div class="col-text">
-        <HeaderTitle align="left" theme="primary" data-aos="fade-up">AWARDS</HeaderTitle>
         <p data-aos="fade-up">
           Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum
           bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.
