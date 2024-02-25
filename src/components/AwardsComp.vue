@@ -2,7 +2,8 @@
   <section>
     <div class="container-fluid">
       <div class="col-text">
-        <p data-aos="fade-up">
+        AWARDS
+        <p data-aos="fade-up" :data-aos-delay="100" data-aos-duration="15000">
           Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum
           bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.
           Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae
@@ -10,14 +11,14 @@
         </p>
       </div>
       <div class="col-card-group">
-        <picture data-aos="fade-up">
+        <picture data-aos="fade-up" :data-aos-delay="100" data-aos-duration="">
           <img
             src="@/assets/images/award.png"
             alt="Asia Smart App Award 2018/2019"
             loading="lazy"
           />
         </picture>
-        <picture data-aos="fade-up">
+        <picture data-aos="fade-up" :data-aos-delay="100">
           <img
             src="@/assets/images/award.png"
             alt="Asia Smart App Award 2018/2019"

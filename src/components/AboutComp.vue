@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <h1>ABOUT DIGISALAD</h1>
-      <div class="ratio" data-aos="fade-up">
+      <div class="ratio" data-aos="fade-up" :data-aos-delay="0" data-aos-duration="1000">
         <iframe
           src="https://www.youtube.com/embed/IeIRJ9jZ5Ro?vq=hd1080"
           title="youtube"
@@ -25,9 +25,7 @@
   </section>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue'
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 section {

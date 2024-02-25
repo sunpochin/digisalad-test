@@ -8,14 +8,21 @@
 @import '@/assets/sass/variables';
 @import '@/assets/sass/mixins/functions';
 button {
+  width: 165px;
+  height: 58px;
   position: relative;
   margin: auto;
-  padding: 20px 50px;
+  padding: 0;
   color: $white;
   font-size: $h6;
+  font-size: 14px;
+  font-style: normal;
   font-weight: $font-weight-bold;
+  line-height: normal;
+  letter-spacing: 2.222px;
+
   background-color: transparent;
-  border: 3px solid $white;
+  border: 2px solid $white;
   border-radius: 35px;
   overflow: hidden;
   z-index: 1;
@@ -23,11 +30,11 @@ button {
     @include beforeafter;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 0;
     height: 100%;
-    background-color: $lighterBlue;
-    transition: width 0.3s;
+    background-color: $surface;
+    transition: width 0.5s;
     z-index: -1;
   }
   &:hover {

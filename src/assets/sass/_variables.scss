@@ -1,5 +1,4 @@
-$spacer: 0.0625rem; //1px
-$timing-function: cubic-bezier(0.35, 0.7, 1, 1);
+$spacer: 0.0625rem;
 
 // breakpoint
 $grid-breakpoints: (
@@ -23,8 +22,6 @@ $container-max-widths: (
 $grid-gutter-width: 1.25rem !default;
 $container-padding-x: $grid-gutter-width !default;
 
-// ---------------------------------------------------------
-
 //
 $display: $spacer * 38; //38px
 $h1: $spacer * 32; //32px
@@ -42,8 +39,6 @@ $h6-m: $spacer * 14; //14px
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-
-// ---------------------------------------------------------
 
 // color
 $white: #ffffff;
