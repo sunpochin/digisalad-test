@@ -1,0 +1,54 @@
+$spacer: 0.0625rem;
+
+// breakpoint
+$grid-breakpoints: (
+  '': 0px,
+  xs: 414px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px
+) !default;
+
+// breakpoint
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 100%,
+  lg: 1170px,
+  xl: 1340px
+) !default;
+
+$grid-gutter-width: 1.25rem !default;
+$container-padding-x: $grid-gutter-width !default;
+
+//
+$display: $spacer * 38; //38px
+$h1: $spacer * 32; //32px
+$h2: $spacer * 28; //28px
+$h3: $spacer * 20; //20px
+$h4: $spacer * 18; //18px
+$h5: $spacer * 16; //16px
+$h6: $spacer * 14; //14px
+$h1-m: $spacer * 28; //28px
+$h2-m: $spacer * 24; //24px
+$h3-m: $spacer * 20; //20px
+$h4-m: $spacer * 18; //18px
+$h5-m: $spacer * 16; //16px
+$h6-m: $spacer * 14; //14px
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// color
+$white: #ffffff;
+$dark: #172728;
+$black: #000000;
+
+$primary: #26c6d0;
+$surface: #ee6c8a;
+$highlight: #ffbc58;
+
+$lighterBlue: #4ee5ea;
+$blueGreen: #26d0a8;
+$purple: #585880;
