@@ -1,5 +1,5 @@
 <template>
-  <h2 ref="titleRef" :class="`${position} ${theme}`">
+  <h2 ref="refTitle" :class="`${position} ${theme}`">
     <slot></slot>
     <span class="decoration">
       <span v-for="(item, index) in amount" :key="index">
@@ -17,13 +17,13 @@
 import { ref, onMounted, defineProps } from 'vue'
 defineProps(['position', 'theme'])
 const amount = ref(1)
-const titleRef = ref(null)
+const refTitle = ref(null)
 
 onMounted(() => {
-  const width = titleRef.value.clientWidth // 獲取整個元件的寬度
+  const width = refTitle.value.clientWidth
   const unit = 30
   amount.value = Math.ceil(width / unit)
-  console.log('titleRef: ', titleRef.value.clientWidth)
+  console.log('refTitle: ', refTitle.value.clientWidth)
 })
 </script>
 
@@ -31,9 +31,9 @@ onMounted(() => {
 @import '@/assets/sass/variables';
 @import '@/assets/sass/mixins/breakpoint';
 
-// :root {
-//   --color: #{$primary};
-// }
+:root {
+  --color: #{$primary};
+}
 
 h2 {
   position: relative;

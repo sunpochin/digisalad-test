@@ -1,12 +1,13 @@
 <script setup>
+import TasteComp from '@/components/TasteComp.vue'
 import AboutComp from '@/components/AboutComp.vue'
 import AwardsComp from '@/components/AwardsComp.vue'
 import Ingradients from '@/components/IngradientsComp.vue'
 </script>
 
 <template>
-  <div class="">
-    <section>Video</section>
+  <div>
+    <TasteComp />
     <AboutComp />
     <AwardsComp />
     <Ingradients />
