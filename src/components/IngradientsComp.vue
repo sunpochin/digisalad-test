@@ -1,6 +1,7 @@
 <template>
   <section>
     <div class="container">
+      <h1>OUT INGRADIENTS</h1>
       <p data-aos="fade-up">
         Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum
         bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.
@@ -27,6 +28,7 @@
           <p>
             {{ item.intro }}
           </p>
+          <ButtonRoundComp>VIEW MORE</ButtonRoundComp>
         </div>
       </div>
       <div class="h5">
@@ -37,6 +39,8 @@
 </template>
 
 <script setup>
+import ButtonRoundComp from '@/components/ButtonRoundComp.vue'
+
 const getImageUrl = (fileName) => {
   // console.log('object', `@/assets/images/ingredient/${fileName}`)
   return `/images/ingredient/${fileName}`
@@ -194,27 +198,29 @@ p {
   }
 }
 .h5 {
-  margin-top: 100px;
+  margin-top: 102px;
   text-align: center;
   .btn-link {
-    padding-left: 0.1111111111em;
+    width: 400px;
+    height: 22px;
+    padding-left: 0.1em;
     color: $white;
     font-weight: $font-weight-bold;
-    letter-spacing: 0.1111111111em;
+    letter-spacing: 0.1em;
     background: linear-gradient(
       180deg,
-      rgba($white, 0) 55%,
-      $highlight 55%,
-      $highlight 95%,
-      rgba($white, 0) 95%
+      rgba($white, 0) 65%,
+      $highlight 65%,
+      $highlight 90%,
+      rgba($white, 0) 90%
     );
     &:hover {
       background: linear-gradient(
         180deg,
-        rgba($white, 0) 55%,
-        $turquoise 55%,
-        $turquoise 95%,
-        rgba($white, 0) 95%
+        rgba($white, 0) 65%,
+        $surface 65%,
+        $surface 90%,
+        rgba($white, 0) 90%
       );
     }
   }

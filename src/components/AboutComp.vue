@@ -1,6 +1,7 @@
 <template>
   <section>
     <div class="container">
+      <h1>ABOUT DIGISALAD</h1>
       <div class="ratio" data-aos="fade-up">
         <iframe
           src="https://www.youtube.com/embed/IeIRJ9jZ5Ro?vq=hd1080"
