@@ -29,7 +29,8 @@
           <p>
             {{ item.intro }}
           </p>
-          <ButtonRoundComp>VIEW MORE</ButtonRoundComp>
+
+          <ButtonRoundComp>{{ item.button }}</ButtonRoundComp>
         </div>
       </div>
       <div class="h5">
@@ -53,55 +54,64 @@ const ingredients = [
     file: 'ingre-01.svg',
     title: 'ux design',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-02.svg',
     title: 'ui design',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-03.svg',
     title: 'website\ndevelopment',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-04.svg',
     title: 'mobile app\ndevelopment',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-05.svg',
     title: 'ecommerce',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-06.svg',
     title: 'customer loyalty',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-07.svg',
     title: 'digital\ntransformation',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-08.svg',
     title: 'digital\nmarketing',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'VIEW MORE'
   },
   {
     file: 'ingre-09.svg',
     title: 'branding',
     intro:
-      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.'
+      'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.',
+    button: 'BRANDING'
   }
 ]
 </script>
@@ -173,9 +183,19 @@ p {
     justify-content: center;
     margin-top: 0;
     margin-bottom: 15px;
+
     color: $white;
-    line-height: 1.5;
+    text-align: center;
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
     text-transform: uppercase;
+
     @include media-breakpoint-up(sm) {
       height: 3em;
       margin-top: 20px;
