@@ -37,7 +37,7 @@ const swiperData = [
 const getImageUrl = (fileName) => {
   const imgName = `/images/showcase/${fileName}`
 
-  console.log('getImageUrl', imgName)
+  // console.log('getImageUrl', imgName)
   return imgName
 }
 </script>
