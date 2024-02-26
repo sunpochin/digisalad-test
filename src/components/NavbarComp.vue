@@ -188,7 +188,7 @@ const routerPush = (route) => {
 @import '@/assets/sass/main.scss';
 @import '@/assets/sass/variables';
 @import '@/assets/sass/mixins/breakpoint';
-@import '@/assets/sass/utilities';
+@import '@/assets/sass/utils/utilities';
 
 .navbar,
 .navbar-brand,
