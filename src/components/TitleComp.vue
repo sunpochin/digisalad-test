@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, defineProps } from 'vue'
+import { ref, onMounted } from 'vue'
 defineProps(['position', 'theme'])
 const amount = ref(1)
 const refTitle = ref(null)
