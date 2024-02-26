@@ -1,5 +1,30 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+import { Offcanvas } from 'bootstrap'
+
+const offcanvas = ref(null)
+
+const showOffcanvas = () => {
+  offcanvas.value.show()
+}
+
+const hideOffcanvas = () => {
+  offcanvas.value.hide()
+}
+
+// const routerPush = (router) => {
+//   $router.push(router)
+//   offcanvas.value.hide()
+// }
+
+onMounted(() => {
+  offcanvas.value = new Offcanvas(offcanvas.value)
+  offcanvas.value.hide()
+})
+</script>
+
 <template>
-  <div>
+  <div ref="offcanvasRef">
     <nav class="navbar navbar-expand-xl fixed-top" :class="isShow">
       <div class="container-fluid">
         <a href="#" class="navbar-brand hover-scale">
@@ -20,7 +45,7 @@
             <img
               class="btn-list btn-list-light"
               src="../assets/images/icon-list-light.svg"
-              alt="navigation list"
+              alt="導覽列"
             />
             <img
               class="btn-list btn-list-dark"
@@ -148,47 +173,8 @@
   </div>
 </template>
 
-<script setup>
-import { ref, computed, onMounted } from 'vue'
-import { Offcanvas } from 'bootstrap'
-import router from '@/router'
-const props = defineProps({
-  isShow: Boolean
-})
-
-const offcanvasRef = ref(null)
-
-onMounted(() => {
-  console.log('props.isShow: ', props.isShow)
-
-  // const offcanvasElement = document.querySelector('.offcanvas-top')
-  // offcanvasRef.value = new Offcanvas(offcanvasElement)
-  // offcanvasRef.value.hide()
-})
-
-const showOffcanvas = () => {
-  offcanvasRef.value.show()
-}
-
-const hideOffcanvas = () => {
-  offcanvasRef.value.hide()
-}
-
-const routerPush = (route) => {
-  router.push(route)
-  hideOffcanvas()
-}
-
-// const isShowClass = computed(() => {
-//   return props.isShow ? 'show' : ''
-// })
-</script>
-
 <style lang="scss" scoped>
-@import '@/assets/sass/main.scss';
-@import '@/assets/sass/variables';
-@import '@/assets/sass/mixins/breakpoint';
-@import '@/assets/sass/utils/utilities';
+@import '../assets/sass/main.scss';
 
 .navbar,
 .navbar-brand,
@@ -217,6 +203,7 @@ const routerPush = (route) => {
     overflow: hidden;
     opacity: 0;
     cursor: none;
+
     @include media-breakpoint-up(md) {
       width: 120px;
       height: 54px;
