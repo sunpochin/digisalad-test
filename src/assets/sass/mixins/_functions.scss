@@ -12,3 +12,10 @@
   content: $content;
   display: $display;
 }
+
+@mixin lineclamp($line) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
