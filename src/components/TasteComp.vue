@@ -10,6 +10,10 @@
     ></video>
 
     <div class="container">
+      <div class="logo" ref="refLogo" :class="{ 'opacity-0': isSticky }">
+        <LogoComp :style="logoTheme" width="199" height="88" />
+      </div>
+
       <div class="subtitle h5">DIGITAL AGENCY</div>
       <div class="word-display">
         <span> We create </span> <br />
@@ -20,7 +24,10 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import LogoComp from '@/components/LogoComp.vue'
+const logoTheme = 'light'
+</script>
 
 <style lang="scss" scoped>
 @import '@/assets/sass/variables';
@@ -32,9 +39,6 @@ section {
   height: 1024px;
 }
 
-.b8 {
-  border-bottom-width: 8px;
-}
 // .pink_dot {
 //   margin-top: -1.75rem;
 //   margin-left: -0.5rem;
@@ -114,8 +118,20 @@ img {
     padding-right: 170px;
   }
 }
+
+.logo {
+  position: relative;
+  top: 25px;
+  left: 220px;
+  transform-origin: top left;
+  transition: all 0.1s;
+  &.opacity-0 {
+    opacity: 0;
+  }
+}
+
 .word-display {
-  margin: 20px 0 20px 200px;
+  margin: 20px 0 20px 226px;
   color: $white;
   font-size: $display * 0.7;
   font-weight: $font-weight-bold;

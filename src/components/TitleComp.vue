@@ -23,7 +23,7 @@ onMounted(() => {
   const width = refTitle.value.clientWidth
   const unit = 30
   amount.value = Math.ceil(width / unit)
-  console.log('refTitle: ', refTitle.value.clientWidth)
+  // console.log('refTitle: ', refTitle.value.clientWidth)
 })
 </script>
 
