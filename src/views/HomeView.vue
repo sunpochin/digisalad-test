@@ -1,5 +1,5 @@
 <script setup>
-import HeaderComp from '@/components/HeaderComp.vue'
+// import HeaderComp from '@/components/HeaderComp.vue'
 import TasteComp from '@/components/TasteComp.vue'
 import AboutComp from '@/components/AboutComp.vue'
 import AwardsComp from '@/components/AwardsComp.vue'
@@ -8,7 +8,7 @@ import Ingradients from '@/components/IngradientsComp.vue'
 
 <template>
   <div>
-    <HeaderComp :emit-sticky="isSticky" :emit-ham="isOpenHam" />
+    <!-- <HeaderComp /> -->
     <TasteComp />
     <AboutComp />
     <AwardsComp />

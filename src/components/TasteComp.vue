@@ -10,7 +10,7 @@
     ></video>
 
     <div class="container">
-      <div class="logo" ref="refLogo" :class="{ 'opacity-0': isSticky }">
+      <div class="logo" ref="refLogo">
         <LogoComp :style="logoTheme" width="199" height="88" />
       </div>
 
