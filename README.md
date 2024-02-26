@@ -11,5 +11,5 @@ https://digisalad-test.vercel.app/
 ### TECH stack
 
 - Vue3
-- BOOTSTRAP
+- Bootstrap
 - AOS
