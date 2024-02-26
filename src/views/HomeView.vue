@@ -5,6 +5,7 @@ import AboutComp from '@/components/AboutComp.vue'
 import AwardsComp from '@/components/AwardsComp.vue'
 import Ingradients from '@/components/IngradientsComp.vue'
 import FounderComp from '@/components/FounderComp.vue'
+import BrandComp from '@/components/BrandComp.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import FounderComp from '@/components/FounderComp.vue'
     <AwardsComp />
     <Ingradients />
     <FounderComp />
+    <BrandComp />
     <section>Brand Experience</section>
     <section>Highlighted Showcase</section>
   </div>
