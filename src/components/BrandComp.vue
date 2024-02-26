@@ -261,16 +261,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   > .brand-item {
-    width: (100% / 3);
+    width: calc(100% / 3);
     padding: 0 5px 20px;
     @include media-breakpoint-up(sm) {
       padding: 0 10px 30px;
     }
     @include media-breakpoint-up(md) {
-      width: (100% / 5);
+      width: calc(100% / 5);
     }
     @include media-breakpoint-up(lg) {
-      width: (100% / 7);
+      width: calc(100% / 7);
     }
     img {
       display: block;

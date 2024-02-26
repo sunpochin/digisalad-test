@@ -35,7 +35,7 @@
 
 section {
   position: relative;
-  padding-right: $grid-gutter-width/2;
+  padding-right: calc($grid-gutter-width/2);
   @include media-breakpoint-up(md) {
     padding-right: 70px;
   }

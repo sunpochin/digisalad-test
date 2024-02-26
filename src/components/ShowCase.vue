@@ -79,6 +79,28 @@ const getImageUrl = (fileName) => {
 @import '@/assets/sass/utils/variables';
 @import '@/assets/sass/mixins/breakpoint';
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.btn-custom {
+  width: 300px;
+  height: 140px;
+  margin: auto;
+  background-color: $primary;
+  margin-top: -40px;
+  z-index: 1;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $dark;
+  }
+}
 .showcase {
   &-index {
     position: absolute;
