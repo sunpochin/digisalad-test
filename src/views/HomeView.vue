@@ -20,9 +20,23 @@ import Ingradients from '@/components/IngradientsComp.vue'
 </template>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/mixins/breakpoint';
 .home {
   width: 100%;
   max-width: 100%;
   margin: auto;
+}
+
+.container {
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    max-width: 540px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1272px;
+    flex: 1 1 0;
+  }
 }
 </style>
