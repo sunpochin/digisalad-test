@@ -30,7 +30,7 @@ const logoTheme = 'light'
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/variables';
+@import '@/assets/sass/utils/variables';
 @import '@/assets/sass/mixins/breakpoint';
 
 section {

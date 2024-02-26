@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/variables';
+@import '@/assets/sass/utils/variables';
 @import '@/assets/sass/mixins/functions';
 button {
   width: 165px;
@@ -14,7 +14,7 @@ button {
   margin: auto;
   padding: 0;
   color: $white;
-  font-size: $h6;
+  font-size: $h6-font-size;
   font-size: 14px;
   font-style: normal;
   font-weight: $font-weight-bold;

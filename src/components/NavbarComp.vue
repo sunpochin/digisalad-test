@@ -12,10 +12,10 @@ const hideOffcanvas = () => {
   offcanvas.value.hide()
 }
 
-// const routerPush = (router) => {
-//   $router.push(router)
-//   offcanvas.value.hide()
-// }
+const routerPush = (router) => {
+  router.push(router)
+  offcanvas.value.hide()
+}
 
 onMounted(() => {
   offcanvas.value = new Offcanvas(offcanvas.value)
@@ -45,12 +45,12 @@ onMounted(() => {
             <img
               class="btn-list btn-list-light"
               src="../assets/images/icon-list-light.svg"
-              alt="導覽列"
+              alt="navigation"
             />
             <img
               class="btn-list btn-list-dark"
               src="../assets/images/icon-list-dark.svg"
-              alt="導覽列"
+              alt="navigation"
             />
           </button>
         </div>
@@ -180,6 +180,31 @@ onMounted(() => {
 .navbar-brand,
 .btn-list {
   transition: all ease 0.3s;
+}
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: transparent;
+  // border-top-left-radius: 30px;
+  // border-bottom-left-radius: 30px;
+  // border-bottom-right-radius: 30px;
+  @include media-breakpoint-up(sm) {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-left: 70px;
+    padding-right: calc(((100vw - 1240px) / 2) + 70px);
+  }
 }
 
 .navbar {

@@ -7,7 +7,7 @@ import Ingradients from '@/components/IngradientsComp.vue'
 </script>
 
 <template>
-  <div>
+  <div class="home">
     <!-- <HeaderComp /> -->
     <TasteComp />
     <AboutComp />
@@ -18,3 +18,11 @@ import Ingradients from '@/components/IngradientsComp.vue'
     <section>Highlighted Showcase</section>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.home {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+</style>
