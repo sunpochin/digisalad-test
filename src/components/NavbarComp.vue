@@ -1,30 +1,29 @@
-<script setup>
-import { ref, onMounted } from 'vue'
+<script>
 import { Offcanvas } from 'bootstrap'
 
-const offcanvas = ref(null)
-
-const showOffcanvas = () => {
-  offcanvas.value.show()
+export default {
+  props: ['isShow'],
+  methods: {
+    showOffcanvas() {
+      this.offcanvas.show()
+    },
+    hideOffcanvas() {
+      this.offcanvas.hide()
+    },
+    routerPush(router) {
+      this.$router.push(router)
+      this.offcanvas.hide()
+    }
+  },
+  mounted() {
+    this.offcanvas = new Offcanvas(this.$refs.offcanvas)
+    this.offcanvas.hide()
+  }
 }
-
-const hideOffcanvas = () => {
-  offcanvas.value.hide()
-}
-
-const routerPush = (router) => {
-  router.push(router)
-  offcanvas.value.hide()
-}
-
-onMounted(() => {
-  offcanvas.value = new Offcanvas(offcanvas.value)
-  offcanvas.value.hide()
-})
 </script>
 
 <template>
-  <div ref="offcanvasRef">
+  <div>
     <nav class="navbar navbar-expand-xl fixed-top" :class="isShow">
       <div class="container-fluid">
         <a href="#" class="navbar-brand hover-scale">
@@ -45,12 +44,12 @@ onMounted(() => {
             <img
               class="btn-list btn-list-light"
               src="../assets/images/icon-list-light.svg"
-              alt="navigation"
+              alt="導覽列"
             />
             <img
               class="btn-list btn-list-dark"
               src="../assets/images/icon-list-dark.svg"
-              alt="navigation"
+              alt="導覽列"
             />
           </button>
         </div>
@@ -180,31 +179,6 @@ onMounted(() => {
 .navbar-brand,
 .btn-list {
   transition: all ease 0.3s;
-}
-
-.container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  background-color: transparent;
-  // border-top-left-radius: 30px;
-  // border-bottom-left-radius: 30px;
-  // border-bottom-right-radius: 30px;
-  @include media-breakpoint-up(sm) {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  }
-  @include media-breakpoint-up(md) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  @include media-breakpoint-up(xl) {
-    padding-left: 70px;
-    padding-right: calc(((100vw - 1240px) / 2) + 70px);
-  }
 }
 
 .navbar {
