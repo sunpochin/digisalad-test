@@ -18,7 +18,7 @@ import ShowCase from '@/components/ShowCase.vue'
     <Ingradients />
     <FounderComp />
     <BrandComp />
-    <ShowCase />
+    <!-- <ShowCase /> -->
   </div>
 </template>
 

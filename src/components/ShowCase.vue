@@ -68,11 +68,6 @@ const getImageUrl = (fileName) => {
       </div>
     </SwiperSlide>
   </Swiper>
-
-  <div class="showcase-index fw-semibold ls-sm">
-    <p class="showcase-index-start">01</p>
-    <p class="showcase-index-end">04</p>
-  </div>
 </template>
 
 <style lang="scss" scoped>
